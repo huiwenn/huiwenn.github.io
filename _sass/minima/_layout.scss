@@ -3,7 +3,7 @@
  */
 
 .site-header {
-  font: $courier;
+  font-family: $courier;
   background: $grey-color-dark;
   opacity: 0.6;
   min-height: $spacing-unit * 1.865;
@@ -159,7 +159,7 @@
 .page-heading {
   @include relative-font-size(1.5);
   font-weight: 600;
-  font: $courier !default;
+  font-family: $courier;
 }
 
 .post-list {
