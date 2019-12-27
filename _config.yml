@@ -22,5 +22,5 @@ kramdown:
   input: GFM
   auto_ids: true
   syntax_highlighter: rouge
- sass:
+sass:
   sass_dir: _sass
