@@ -5,6 +5,8 @@ twitter_username: _yokaii_
 baseurl: "/"
 description: bleep bloop tech stuff.
 profile_url: "http://guiguiguiguigui.github.io"
+permalink: /:title
+
 
 # Build settings
 markdown: kramdown
