@@ -1,0 +1,22 @@
+title: Sophia Sun
+name: "Sophia's Blog"
+author: Sophia Sun
+twitter_username: _yokaii_
+baseurl: "/"
+description: bleep bloop tech stuff.
+profile_url: "http://guiguiguiguigui.github.io"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+excerpt_separator: <!--more-->
+plugins:
+  - jekyll-feed
+  - jekyll-archives
+exclude:
+  - Gemfile
+  - Gemfile.lock
+kramdown:
+  input: GFM
+  auto_ids: true
+  syntax_highlighter: rouge
