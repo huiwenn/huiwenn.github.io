@@ -5,7 +5,7 @@
 .site-header {
   font: $courier;
   background: $grey-color;
-  opacity: 0.9;
+  opacity: 0.95;
   min-height: $spacing-unit * 1.865;
   position: relative;
 
@@ -159,7 +159,7 @@
 .page-heading {
   @include relative-font-size(1.5);
   font-weight: 600;
-  font: $courier;
+  font: $courier !default;
 }
 
 .post-list {
