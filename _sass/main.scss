@@ -4,7 +4,8 @@
 @charset "utf-8";
 
 // Define defaults for each variable.
-$base-font-family:  "Courier", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$courier: "Courier";
+$base-font-family:  Helvetica, Arial, sans-serif !default;
 $base-font-size:   16px !default;
 $base-font-weight: 400 !default;
 $small-font-size:  $base-font-size * 0.875 !default;
@@ -18,7 +19,7 @@ $brand-color:      #000000 !default;
 
 $grey-color:       #828282 !default;
 $grey-color-light: lighten($grey-color, 40%) !default;
-$grey-color-vlight: lighten($grey-color, 60%) !default;
+$grey-color-vlight: lighten($grey-color, 30%) !default;
 $grey-color-dark:  darken($grey-color, 25%) !default;
 
 $orange-color:          #ff8f26;
