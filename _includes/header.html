@@ -1,0 +1,29 @@
+<header class="site-header" role="banner" id='header-bar'>
+
+    <div class="wrapper">
+        {% assign default_paths = site.pages | map: "path" %}
+        <a class="site-title" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+
+        <!-- <nav class="site-nav">
+            <a class="page-link" href="http://lilianweng.github.io" target="_blank">&#x1f349; About</a>
+        </nav> -->
+        <nav class="site-nav">
+            <a class="page-link" href="http://cseweb.ucsd.edu/~shs066/"> Contact</a>
+        </nav>
+
+    </div>
+
+</header>
+
+<script>
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("header-bar").style.top = "0";
+  } else {
+    document.getElementById("header-bar").style.top = "-50px";
+  }
+  prevScrollpos = currentScrollPos;
+}
+</script>
