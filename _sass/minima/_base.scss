@@ -13,7 +13,7 @@ hr {
     display: block;
     height: 1px;
     border: 0;
-    border-top: 1px solid $crimson-color-very-light;
+    border-top: 1px solid $grey-color-vlight;
     margin: 2em 0;
     padding: 0; 
 }
@@ -182,7 +182,7 @@ a {
   }
 
   &:hover {
-    color: $crimson-color-light;
+    color: $grey-color-vlight;
     text-decoration: underline;
   }
 
