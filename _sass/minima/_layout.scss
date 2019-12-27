@@ -4,8 +4,7 @@
 
 .site-header {
   font-family: $courier;
-  background: $grey-color-dark;
-  opacity: 0.6;
+  background: $grey-color; //opacity: 0.1;
   min-height: $spacing-unit * 1.865;
   position: relative;
 
