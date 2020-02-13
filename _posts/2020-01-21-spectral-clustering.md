@@ -5,7 +5,7 @@ date: 2020-02-21 01:09:00
 tags: ml
 ---
 
-> An (attempt at) implementation of the self-tuning spectral clustering algorithm by Zelnik-Manor and Perona (2014)
+> An (attempt at) implementation of the self-tuning spectral clustering algorithm by Zelnik-Manor and Perona (2014).
 
 <!--more-->
 
