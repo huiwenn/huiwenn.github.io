@@ -7,6 +7,7 @@ description: bleep bloop tech blog.
 profile_url: "http://guiguiguiguigui.github.io"
 permalink: /:title
 show_drafts: false
+future: false
 
 # Build settings
 markdown: kramdown
