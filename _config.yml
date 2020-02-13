@@ -3,10 +3,10 @@ name: "Sophia's Blog"
 author: Sophia Sun
 twitter_username: _yokaii_
 baseurl: "/"
-description: bleep bloop tech stuff.
+description: bleep bloop tech blog.
 profile_url: "http://guiguiguiguigui.github.io"
 permalink: /:title
-
+show_drafts: false
 
 # Build settings
 markdown: kramdown
@@ -24,3 +24,4 @@ kramdown:
   syntax_highlighter: rouge
 sass:
   sass_dir: _sass
+
