@@ -119,6 +119,35 @@ img + em {
 }
 
 /**
+ * video
+ */
+video {
+  max-width: 100%;
+  vertical-align: middle;
+  margin: 10px auto;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}
+
+video + em {
+  display: block;
+  text-align: center;
+  font-style: italic;
+  font-size: smaller;
+  color: $grey-color-dark;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.center {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+
+/**
  * Figures
  */
 figure > img {
@@ -227,6 +256,14 @@ blockquote {
 .smaller{
    font-size: smaller;
    font-style: italic;
+}
+
+.smaller-center{
+   font-size: smaller;
+   font-style: italic;
+   text-align: center;
+   padding-top: 8px;
+   padding-bottom: 8px;
 }
 
 
