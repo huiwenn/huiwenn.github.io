@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Implementing Self-Tuning Spectral Clustering"
-date: 2020-02-21 01:09:00
+date: 2020-01-21 01:09:00
 tags: ml
 ---
 
@@ -102,49 +102,55 @@ plt.title("Spectral Clustering")
 ## Tunning Oneself
 
 ### Local Scaling
-Local scaling deals with choosing the hyper-parameter $$\sigma$$ in the NJW algorithm. The the drawbacks of this hanging $$\sigma$$ is that it requires manual tuning, and data might require different values of $$\sigma$$ across the domain (see figure TODO for example.).
+The main drawback of the global $$\sigma$$ hyperparameter is that it does not handle the case where data is of various density across the domain, for which a $$\sigma$$ may work well with some portion of the data but not the rest. (see figure TODO for example.)
 
-The intuition behind local scaling is that connectivity/affinity (matrix $$A$$) should be viewed from the points themselves, so a point will have higher affinity with points closer to it and vice versa. Such affinity measure's magnitude should be consistent globally. So instead of a graph whose edge weight is absolute distance, we want to construct a weighted nearest neighbor graph.
+Zelnik-Manor and Perona \[1\] argues that connectivity/affinity (matrix $$A$$) should be viewed from the points themselves. We can formulate it by selecting a local scaling parameter for each data point $$s_i$$.
+The distance from $$s_i$$ to $$s_j$$ from the perspective of $$s_i$$ is $$d(s_i , s_j )/\sigma_i$$ and the converse is  $$d(s_i , s_j )/\sigma_j$$. The square distance may be generalized as their product, i.e. $$d(s_i , s_j )^2/\sigma_i \sigma_j$$. The (local-scaled) affinity between a pair of points therefore becomes:
 
-This is achieved by selecting a local scaling parameter for each data point $$s_i$$.
-The distance from si to sj as ‘seen’ by si is d(si , sj )/σi while the converse is d(sj , si )/σj . Therefore the square distance d2 of the earlier papers may be generalized as d(si , sj )d(sj , si )/σi σj = d2(si,sj)/σiσj The affinity between a pair of points can thus be written as:
-􏰎−d2(s ,s )􏰏
-Aˆij=exp ij 
+$$\hat{A}_{ij} = \exp(\frac{-d(s_i,s_j)^2}{\sigma_i\sigma_j})$$
 
-Take data in the following figure for example. The inner cycle of the red points are closer to blue points than outer red points, so if we don't scale the affinity, they will connect to the blue cluster more strongly (fig 2b). The blue points, however, are are much more connected to other blue points than to the inner red points. The outer red points, on the other hand, only have connection to the inner red points. This results in 
+Having such construct allows us to adapt the distance -> affinity scaling to data's local landscape. One way of achieving this goal, as introduced in \[1\], is to use the local nearest neighbor statistics 
+
+$$\sigma_i = d(s_i, s_K)$$
+
+Where $$s_K$$ is the $$K$$'th neighbor of $$s_i$$. So instead of a graph whose edge weight is absolute distance, we want to construct a weighted nearest neighbor graph. Hyperparameter $$K$$ will need to be manually tuned (\[1\] states that $$K=7$$ worked well for all their experiments).
+
+Take data in the following figure for example. The local-scaled affinity will be high between points that are _both_ close neighbors to each other, whereby strongly connecting the red points as in (c) rather than in (b) where a single global $$\sigma$$ is used.
 
 ![figure 2]({{ '/assets/img/clustering/local-scaling.png' | relative_url }})
-*Effect of local scaling, figure 2 from \[1\]. Where (a) input data point (b) affinity unscaled, and (c) affinity after local scaling*
+*Effect of local scaling, figure 2 from \[1\]. (a) input data point (b) affinity unscaled, and (c) affinity after local scaling*
 {: style="width: 80%;" class="center"} 
 
+The implementation of self tuning is straightforward. 
+
 ```python
+from tqdm import tqdm
+
 def W_local(X):
     dim = X.shape[0]
-    print("started pdist")
     dist_ = pdist(X)
-    print("finished pdist")
-    A = np.zeros([dim, dim])
+    pd = np.zeros([dim, dim])
     dist = iter(dist_)
     for i in range(dim):
         for j in range(i+1, dim):  
             d = next(dist)
-            A[i,j] = d
-            A[j,i] = d
+            pd[i,j] = d
+            pd[j,i] = d
             
     #calculate local sigma
     sigmas = np.zeros(dim)
-    for i in tqdm(range(len(A))):
-        sigmas[i] = sorted(A[i])[7]
+    for i in tqdm(range(len(pd))):
+        sigmas[i] = sorted(pd[i])[7]
     
-    W = np.zeros([dim, dim])
+    A = np.zeros([dim, dim])
     dist = iter(dist_)
     for i in tqdm(range(dim)):
         for j in range(i+1, dim):  
             d = np.exp(-1*next(dist)**2/(sigmas[i]*sigmas[j]))
             #print(d)
-            W[i,j] = d
-            W[j,i] = d
-    return W
+            A[i,j] = d
+            A[j,i] = d
+    return A
 ```
 ## Syntax testing
 
