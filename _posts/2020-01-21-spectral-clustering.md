@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Implementing Self-Tuning Spectral Clustering"
-date: 2020-01-21 01:09:00
+date: 2020-04-21 01:09:00
 tags: ml
 ---
 
