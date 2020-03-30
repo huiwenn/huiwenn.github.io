@@ -17,18 +17,86 @@ tags: ml
 
 This implementation was a homework for a class called _Geometry of Data_ (very cool) taught by [Gal Mishne](http://mishne.ucsd.edu) (also very cool). 
 
-One thing about CS grad school is that I started encountering problems whose solutions can't be easily found online or in books (how inconvenient!). This project, though, was thoroughly delightful. 
+One thing about CS grad school is that I started encountering problems whose solutions can't be easily found online or in books (how inconvenient!). Sometimes, though, the process becomes very fulfilling, and this is one of them.
 
 
 ## Spectral Clustering
 
 Spectral clustering is a approach to clustering where we (1) construct a graph from data and then (2) partition the graph by analyzing its connectivity.
 
-This is a departure from some of the more well-known approaches, such as the K-means algorithm or learning a mixture model via EM, which are based on assumptions about how data are organized into clusters. They tend not to do the best when the clusters are of complex or unknown shape, for example:
+This is a departure from some of the more well-known approaches, such as  K-means or learning a mixture model via EM, which are based on the assumption that clusters are concentrated in terms of (often Cartesian) distance. They tend not to do the best when the clusters are of complex or unknown shape, for example -
 
-(half moons)
-(background)
+:--------------------:|:-------------------------:|:-------------------------:
+![]({{ '/assets/img/clustering/2-og.png' | relative_url }})|![]({{ '/assets/img/clustering/2-kmeans.png' | relative_url }}) | ![]({{ '/assets/img/clustering/2-sc.png' | relative_url }})
 
+*<center>figure 1: concentric circles</center>*
+
+
+hubs and backgrounds:
+
+:--------------------:|:-------------------------:|:-------------------------:
+![]({{ '/assets/img/clustering/1-og.png' | relative_url }})|![]({{ '/assets/img/clustering/1-kmeans.png' | relative_url }}) | ![]({{ '/assets/img/clustering/1-sc2.png' | relative_url }})
+
+*<center>figure 2: two different densities</center>*
+
+## Graph Laplacian 
+
+The clustering algorithm is made possible by a very handy property of the graph Laplacian.
+
+The Laplacian matrix of a graph $$G$$ with $$n$$ nodes is defined as 
+
+$$L = D - A$$
+
+where $$D$$ is the degree matrix and $$A$$ is the adjacency matrix of graph $$G$$. In other words, $$L$$ is an $$n \times n$$ matrix with elements given by 
+
+$$
+L_{i,j} = \begin{cases}
+                        \text{deg}(v_i) & \text{if } i=j \\
+                        -w_{i,j} & \text{if } i \neq j \text{ and there is an edge between i and j }\\
+                        0 & \text{otherwise }
+                    \end{cases}
+$$
+
+If $$G$$ is unweighted, we can use $$w_{i,j} = 1$$ for each edge.
+
+The property we will be taking advantage of is:
+> If the graph $$G$$ has $$K$$ connected components, then $$L$$ has $$K$$ eigenvectors with an eigenvalue of 0.
+
+Moreover, the eigenvectors with eigenvalue of 0 are organized in terms of value to indicate the connected components. Here's an example, with code from [Cory Maklin's blog post](https://towardsdatascience.com/unsupervised-machine-learning-spectral-clustering-algorithm-implemented-from-scratch-in-python-205c87271045):
+
+```python
+import networkx as nx
+import numpy as np
+
+G = nx.Graph()
+G.add_edges_from([[1, 2], [1, 3], [1, 4],  [2, 3],
+                 [2, 7], [3, 4], [4, 7], [1, 7],
+                 [6, 5], [5, 8], [6, 8],  [9, 8], [9, 6]])
+draw_graph(G)
+A = nx.adjacency_matrix(G)
+print('adjacency matrix:')
+print(A.todense())
+```
+
+:--------------------:|:-------------------------:
+![]({{ '/assets/img/clustering/laplacian-1.png' | relative_url }}) | ![]({{ '/assets/img/clustering/lap-a.png' | relative_url }})
+
+
+```python
+D = np.diag(np.sum(np.array(A.todense()), axis=1))
+print('degree matrix:')
+print(D)
+
+L = D - A
+print('laplacian matrix:')
+print(L)
+```
+
+:--------------------:|:-------------------------:
+![]({{ '/assets/img/clustering/lap-d.png' | relative_url }}) | ![]({{ '/assets/img/clustering/lap-l.png' | relative_url }})
+
+
+TODO: but what does a graph Laplacian _mean_?
 
 ## Implementing the NJW algorithm
 
@@ -90,7 +158,7 @@ Given a set of points $$S= \{s_1, \ldots, s_n\}$$ in $$\mathbb{R}^l$$ and desire
     ```
 6. Assign the original point $$s_i$$ to the cluster $$j$$ where the $$i$$-th row of matrix $$Y$$ was assigned to. Implementation-wise, we reuse the ```clusters``` variable directly.
 
-To finish up, let's plot the results to see how it does - 
+To finish up, here's two lines for plotting - 
 
 ```python
 import matplotlib.pyplot as plt
@@ -121,12 +189,12 @@ Take data in the following figure for example. The local-scaled affinity will be
 *Effect of local scaling, figure 2 from \[1\]. (a) input data point (b) affinity unscaled, and (c) affinity after local scaling*
 {: style="width: 80%;" class="center"} 
 
-The implementation of self tuning is straightforward. 
+The implementation of self tuning is straightforward.  
 
 ```python
 from tqdm import tqdm
 
-def W_local(X):
+def A_local(X):
     dim = X.shape[0]
     dist_ = pdist(X)
     pd = np.zeros([dim, dim])
@@ -152,12 +220,14 @@ def W_local(X):
             A[j,i] = d
     return A
 ```
-## Syntax testing
 
-$$
-Q(s, a) \leftarrow (1 - \alpha) Q(s, a) + \alpha (r + \gamma \color{red}{\max_{a' \in \mathcal{A}} Q(s', a')})
-$$
- 
+We can then plug the affinity matrix _A_ into step 2-6 of the NJW algorithm and get results shown in figure 1 and 2.
+
+
+## Edge Detection
+
+One use case of clustering is on image segmentation -- if we cut a given image into patches
+
 
 ## References
 
