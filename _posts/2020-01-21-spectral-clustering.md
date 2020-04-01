@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Implementing Self-Tuning Spectral Clustering"
-date: 2020-04-21 01:09:00
+date: 2020-01-21 01:09:00
 tags: ml
 ---
 
@@ -95,8 +95,18 @@ print(L)
 :--------------------:|:-------------------------:
 ![]({{ '/assets/img/clustering/lap-d.png' | relative_url }}) | ![]({{ '/assets/img/clustering/lap-l.png' | relative_url }})
 
+&nbsp;
 
-TODO: but what does a graph Laplacian _mean_?
+Now, if we calculate the eigenvalues and eigenvectors of the Laplacian, we get two 0 eigenvalues as expected. The eigenvectors corresponding to them clearly separate the two clusters. In practice, we use k-means to separate the clusters across the eigenvectors (see section below), as even the clusters are not cleanly separated, the eigenvectors still provide information about interconnectivity.
+
+&nbsp;
+
+![]({{ '/assets/img/clustering/eigen.png' | relative_url }})
+*figure 3: concentric circles*
+
+&nbsp;
+
+TODO: but what does a graph Laplacian and its eigenvectors _mean_?
 
 ## Implementing the NJW algorithm
 
@@ -223,11 +233,84 @@ def A_local(X):
 
 We can then plug the affinity matrix _A_ into step 2-6 of the NJW algorithm and get results shown in figure 1 and 2.
 
+### Estimating number of clusters
 
-## Edge Detection
+So far, all the algorithms we discussed requires the number of cluster as a hyper parameter. In practical cases, however, the optimal number of clusters is often unclear.
 
-One use case of clustering is on image segmentation -- if we cut a given image into patches
+Zelnik-Manor and Perona (2014)'s algorithm proposes to use non-maximal suppression after rotating the eigenvector to estimate the number of groups.
 
+
+## Image Segmentation
+
+One use case of clustering is on image segmentation. One of the reasons of me writing this post is to show off my cat picture, so here we go.
+
+![cat]({{ '/assets/img/clustering/cat.png' | relative_url }})
+*my friend's cat chilling in my room 🐈*
+
+The way I approached it is to cut the image into smaller patches and cluster them. The code below resizes the image matrix into non-overlapping patches of size $$2×2$$, essentially down-sampling the image. `open-cv`'s python package is used for this processing.
+
+``` python
+import cv2
+from sklearn.feature_extraction import image
+
+im_ = cv2.imread("img_small.jpg", cv2.IMREAD_COLOR)
+im = cv2.cvtColor(im_, cv2.COLOR_BGR2GRAY)
+plt.imshow(im, cmap = 'gray') 
+
+sz = im.itemsize
+h,w = im.shape
+bh,bw = 2,2 #block height and width
+shape = (int(h/bh), int(w/bw), bh, bw)
+strides = sz*np.array([w*bh,bw,w,1])
+print(shape, strides)
+
+patches = np.lib.stride_tricks.as_strided(im, shape=shape, strides=strides)
+```
+
+Then we apply the algorithm we implemented on the patches. This step is computationally intense and thus time consuming, so I recommend saving the matrices as they are being computed.
+
+``` python
+a,b,c,d = patches.shape
+X = patches.reshape([a*b, c*d])
+A = A_local(X)
+D_half = linalg.fractional_matrix_power(np.sum(A, axis=0) * np.eye(X.shape[0]), -0.5)
+L = np.matmul(np.matmul(D_half, A), D_half)
+
+eigval, eigvec = np.linalg.eigh(L)
+```
+
+we can then plot the eigenvectors.
+
+``` python
+def eig2pic_(eig):
+    arr_blocks = eig.reshape([a, b]) #a, b comes from code block above
+    img = np.array([np.hstack(bl) for bl in arr_blocks])
+    img = np.vstack(img)
+    plt.imshow(img, cmap = 'gray') 
+
+eig2pic_(eigvec_cat[:,-1])
+```
+
+![eig-1]({{ '/assets/img/clustering/e-1.png' | relative_url }})
+*Largest Eigenvector.*
+
+Note that the boundaries of the guitar and part of the cat are marked with darker lines, signifying segmentation boundaries. The next few eigenvectors indicates other modes of segmentation:
+
+:--------------------:|:-------------------------:|:-------------------------:
+![]({{ '/assets/img/clustering/e-2.png' | relative_url }}) | ![]({{ '/assets/img/clustering/e-3.png' | relative_url }}) | ![]({{ '/assets/img/clustering/e-4.png' | relative_url }})
+
+
+&nbsp;
+
+And here are some segmentation results with k-means ran on the first $$k$$ eigenvectors, with $$k=2$$, $$k=4$$, $$k=8$$.
+
+:--------------------:|:-------------------------:|:-------------------------:
+![]({{ '/assets/img/clustering/c-2.png' | relative_url }}) | ![]({{ '/assets/img/clustering/c-4.png' | relative_url }}) | ![]({{ '/assets/img/clustering/c-8.png' | relative_url }})
+
+&nbsp;
+
+Thanks for reading!
+![]({{ '/assets/img/clustering/cat.jpeg' | relative_url }})
 
 ## References
 
