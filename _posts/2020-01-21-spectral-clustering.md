@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Implementing Self-Tuning Spectral Clustering"
-date: 2020-01-21 01:09:00
-tags: ml
+date: 2020-1-10
+tags: machine-learning
 ---
 
 > An (attempt at) implementation of the self-tuning spectral clustering algorithm by Zelnik-Manor and Perona (2014).

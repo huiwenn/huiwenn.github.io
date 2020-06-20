@@ -13,7 +13,7 @@
 .site-title {
   @include relative-font-size(1.6);
   color: #grey-color;
-  letter-spacing: 2px;
+  letter-spacing: 0px;
   line-height: $base-line-height * $base-font-size * 2.25;
   margin-bottom: 0;
   float: left;
@@ -120,12 +120,13 @@
  * Site footer
  */
 .site-footer {
+  font-family: $roboto;
   right: 0;
   bottom: 0;
   left: 0;
   padding: 1rem;
   text-align: center;
-  font-size: $small-font-size;
+  font-size: $small-font-size-roboto;
   color: $grey-color;
   clear: both;
   margin-bottom: 30px;
@@ -150,6 +151,39 @@
 /**
  * Page content
  */
+
+.homepage {
+  margin-top: $spacing-unit*3;
+  margin-bottom: $spacing-unit*2;
+  font-family: $roboto;
+  
+  .padding {
+      margin-top: $spacing-unit;
+  }
+
+  p {
+    font-size: $small-font-size-roboto;
+    margin-top: 0px;
+  }
+  
+  li {  
+        font-size: $small-font-size-roboto;
+  }
+
+  h2 { 
+    margin-top: $spacing-unit*2;
+    font-size: $base-font-size;
+    font-weight: bold;
+
+  }
+
+  h4 {
+      font-size: $small-font-size-roboto;
+      margin-bottom: 5px;
+      font-weight: bold;
+  }
+
+}
 .page-content {
   padding: $spacing-unit 0;
 }
@@ -158,14 +192,17 @@
   @include relative-font-size(1.6);
   font-family: $roboto;
   font-weight: $base-font-weight * 1.2;
+  margin-top: $spacing-unit;
 }
 
 .post-list {
   margin-left: 0;
   list-style: none;
+  font-family: $base-font-family;
 
   > li {
-    margin-bottom: $spacing-unit * 2;
+    margin-top: $spacing-unit;
+    margin-bottom: $spacing-unit*1.5;
   }
 }
 
@@ -189,11 +226,10 @@
 }
 
 .post-link {
-  font-family: $roboto;
-  font-weight: $base-font-weight * 1.2;
+  font-weight: $base-font-weight;
 
   display: block;
-  @include relative-font-size(1.8);
+  @include relative-font-size(1.4);
   font-color: #000000;
   &:hover {
     color: $grey-color;
@@ -225,24 +261,23 @@ div.qa {
  * Posts
  */
 .post-header {
-  margin-top: $spacing-unit * 2;
+  margin-top: $spacing-unit;
   margin-bottom: $spacing-unit;
+
 }
 
 .post-title {
   @include relative-font-size(2.2);
-  letter-spacing: -1px;
+  letter-spacing: 0px;
   line-height: 1.2;
 
   @include media-query($on-laptop) {
     @include relative-font-size(2.2);
   }
-  letter-spacing: 1px;
   max-width: 100%;
 }
 
 .post-content {
-  margin-bottom: $spacing-unit;
 
   h2 {
     @include relative-font-size(1.8);
@@ -267,6 +302,7 @@ div.qa {
     }
     font-weight: $base-font-weight * 1.35;
     margin-top: $spacing-unit * 1.1;
+
   }
 
   h4 {

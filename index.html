@@ -1,32 +1,25 @@
 ---
-layout: default
+layout: homepage
 ---
-<div class="home other-pages">
-  <h1 class="page-heading">Posts</h1>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <h2>
-          <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-            {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
-          <span class="post-meta">
-            {{ post.date | date: date_format }}
-            <span>
-              {% for tag in post.tags %}
-                {% capture tag_name %}{{ tag }}{% endcapture %}
-                <a class="post-tag" href="/tag/{{ tag_name }}"><nobr>{{ tag_name }}</nobr>&nbsp;</a>
-              {% endfor %}
-            </span>
-          </span>
 
-          {% if post.excerpt %}
-          <span class="post-content">
-            {{ post.excerpt }}
-          </span>
-          {% endif %}
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
- </div>
+<div class="row">
+    <div class="col-md-8">
+    <div class="block"></div>
+      <p>Hi! Sophia here. </p>
+      <p>I am a PhD student in Computer Science at UC San Diego, advised by <a href="https://scungao.github.io/" style="color: #4f4f4f">prof. Sicun Gao</a>. I work on machine learning methods for robotics and control. </p>
+      <p> I'm also interested in machine creativity and digital humanities.</p>
+
+      <p><u><a href="/assets/img/idx/cv.pdf">CV</a></u></p>
+    </div>
+    <div class="col-md-4">
+        <img src="/assets/img/idx/sophia.jpg" alt="a picture" >
+    </div>
+</div>
+
+
+<h2>Pubs</h2>
+<ul>
+<li> <h4><a href="https://emusicology.org/article/view/5889/4974">Emotion painting: lyric, affect, and musical relationships in a large leadsheet corpus </a> </h4>
+	Sophia H. Sun, Michael Scott Cuthbert <br>
+	<i>Empirical Musicology Review 12.3-4.</i> 2018 </li>
