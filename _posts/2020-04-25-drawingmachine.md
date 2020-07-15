@@ -32,9 +32,8 @@ Even after calibration the drawing is still a little... wonky, because of the el
 
 &nbsp;
 
-The bot even participated in our weekly _drink-and-draw_ event! People blew into a alcohol sensor appended on to raspberry Pi, whose reading were used to parametrize the  `open-cv` vectorize function. So technically we drank and it drew. Here is (a link to) a video of the bot drawing. 
+The bot even participated in our weekly _drink-and-draw_ event! People blew into a alcohol sensor appended on to raspberry Pi, whose reading were used to parametrize the  `open-cv` vectorize function. So technically we drank and it drew. Here is [a video](https://twitter.com/_yokaii_/status/1249096320083607553 ) of the bot drawing. 
 
-{% twitter https://twitter.com/_yokaii_/status/1249096320083607553 %}  
 
 &nbsp;
 You can find my code for it [here](https://github.com/guiguiguiguigui/chatsubo-e).
