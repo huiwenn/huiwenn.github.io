@@ -8,6 +8,9 @@ profile_url: "http://guiguiguiguigui.github.io"
 permalink: /:title
 show_drafts: false
 future: false
+category: "post"
+img: ""
+
 
 # Build settings
 markdown: kramdown
@@ -16,13 +19,11 @@ excerpt_separator: <!--more-->
 plugins:
   - jekyll-feed
   - jekyll-archives
+  - jekyll-twitter-plugin
 exclude:
-  - Gemfile
-  - Gemfile.lock
 kramdown:
   input: GFM
   auto_ids: true
   syntax_highlighter: rouge
 sass:
   sass_dir: _sass
-

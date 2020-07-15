@@ -1,0 +1,14 @@
+---
+layout: default
+---
+<div class="home other-pages">
+
+    {% for post in site.categories["objects"] %}
+      <div class="col-sm-6 gallery">
+        <a href="{{ post.url | relative_url }}">
+          <img title="{{post.title}}" src="{{ post.img | relative_url }}" >
+        </a>
+      </div>
+    {% endfor %}
+
+ </div>
