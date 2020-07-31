@@ -32,7 +32,7 @@ Even after calibration the drawing is still a little... wonky, because of the el
 
 &nbsp;
 
-The bot even participated in our weekly _drink-and-draw_ event! People blew into a alcohol sensor appended to the raspberry Pi, whose reading were used to parametrize the `open-cv` vectorize function. So technically, we drank and it drew. Here is [a video](https://twitter.com/_yokaii_/status/1249096320083607553 ) of the bot figure drawing. 
+The bot even participated in our weekly _drink-and-draw_ event. People blew into a alcohol sensor appended to the raspberry Pi, whose reading were used to parametrize the `open-cv` vectorize function. (So technically, we drank and it drew.) Here is [a video](https://twitter.com/_yokaii_/status/1249096320083607553 ) of the bot figure drawing. 
 
 
 &nbsp;

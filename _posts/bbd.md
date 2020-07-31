@@ -1,0 +1,549 @@
+---
+layout: post
+title: "Bombay Beach Diaries"
+date: 2020-06-2 01:09:00
+tags: misc
+---
+
+> A photo journal of my time @ bombay beach, CA.
+
+<!--more-->
+
+
+{: class="table-of-content"}
+* TOC
+{:toc}
+
+## The Town
+I'm at Bombay Beach for [brahman.ai](https://brahman.ai), [Gene](https://genekogan.com)'s initiative for living and learning in the californian desert. I came here with the intention to [write about ml](https://ml4a.github.io) and to build robots.
+
+Bombay Beach is maybe best known by its [Biennale](http://www.bombaybeachbiennale.org), a town-wide art festival with tints of post-apocalyptic aesthetics. The Biennalie's artifacts resonate really well with the people and landscape here, making BB a crusty, magical-realist, and overall very charming town. 
+
+I'd love to give you a little tour here, but that has to wait until I develop & scan my films. For now, here's a sneak peek.
+
+![bb]({{ '/assets/img/bbd/town/welcome.jpg' | relative_url }})
+*The last resort!*
+
+![pirates]({{ '/assets/img/bbd/town/pirates.jpg' | relative_url }})
+*The yard outside of Pirate's, one of our bases.*
+
+![modular]({{ '/assets/img/bbd/town/modular.jpg' | relative_url }})
+*Chelley working the modulars at Pirate's.*
+
+![drivein]({{ '/assets/img/bbd/town/drivein.jpg' | relative_url }})
+*The Drive-in*
+
+Some artworks at the beach.
+
+![ss0]({{ '/assets/img/bbd/town/ss0.jpg' | relative_url }})
+*The swing*
+
+![ss1]({{ '/assets/img/bbd/town/ss1.jpg' | relative_url }})
+*The sunken ship*
+
+![ss2]({{ '/assets/img/bbd/town/ss2.jpg' | relative_url }})
+*The cube*
+
+![ss3]({{ '/assets/img/bbd/town/ss3.jpg' | relative_url }})
+*The nothing*
+
+![birds]({{ '/assets/img/bbd/town/birds.jpg' | relative_url }})
+*Birds*
+
+## Desert Dayz
+
+### Feb.8 - metal welding
+
+![wire welding]({{ '/assets/img/bbd/1-5.jpg' | relative_url }})
+*Workshop in action. photo by [Phil](https://phillipstearns.com).*
+
+![wire welding]({{ '/assets/img/bbd/1-2.jpg' | relative_url }})
+*[Gene](https://genekogan.com) wire welding; photo by phil.*
+
+![]({{ '/assets/img/bbd/1-3.jpeg' | relative_url }})
+*A practice piece.*
+
+
+![intrinsic dimension experiment 1]({{ '/assets/img/bbd/1-1.jpeg' | relative_url }})
+*The workshop ended with a collective effort of cutting a bed frame and welding the pieces into a unicycle rack.*
+
+![intrinsic dimension experiment 1]({{ '/assets/img/bbd/1-4.jpg' | relative_url }})
+*Final product. Photo by [Phil](https://phillipstearns.com).*
+
+Finishing the day with a great sunset over the RVs.
+
+![Sunset over trailers]({{ '/assets/img/bbd/1-6.jpeg' | relative_url }})
+{: style="width: 80%;" class="center"}
+
+
+### Feb.9 - storm-proofing mars
+
+Mars is another Brahman site in the desert east of Bombay Beach. The structures shown below is _portal_ (a glimpse into the building process [here](https://www.instagram.com/p/B7eYyg0Ba1K/)), in which we plan to host a party next Saturday. 
+
+<video src="./assets/img/bbd/2-4.mp4" width="500"  class='center' controls preload></video>
+
+&nbsp;
+
+The evening's work was to protect the structure and the 48 TVs inside it. The TVs were donated by a hotel in Manhattan after its renovation. These pictures were taken on the second day, as we were rushing to cover as many area possible before sundown.
+
+![]({{ '/assets/img/bbd/2-5.jpg' | relative_url }})  |  ![]({{ '/assets/img/bbd/2-6.jpg' | relative_url }})
+
+&nbsp;
+
+![TV calibration]({{ '/assets/img/bbd/2-1.jpeg' | relative_url }})
+*TV calibration.*
+{: style="width: 60%;" class="center"} 
+
+&nbsp;
+
+
+![full moon]({{ '/assets/img/bbd/2-3.jpeg' | relative_url }})
+*full moon.*
+{: style="width: 80%;" class="center"} 
+
+
+### Feb.10 - 3d printing and network security
+
+The storm alert turned out to be a false alarm, but I nonetheless stayed in and learned to do some 3D printing from [Alejandro](https://github.com/alejandrosame).
+
+![3d-20d]({{ '/assets/img/bbd/3-1.jpg' | relative_url }})
+*Good ol' [d20](https://www.thingiverse.com/thing:955433) with our Tevo Tarantula*
+![sofy]({{ '/assets/img/bbd/3-2.JPG' | relative_url }})
+*Malleable cable holder re-purposed by [Sofy](https://soniayuditskaya.tumblr.com/)*
+{: style="width: 60%;" class="center"} 
+
+Who doesn't want to learn about network security and incidence response on a Monday night? With the d20s, we played two rounds of [b&b](http://www.backdoorsandbreaches.com/). 
+
+
+### Feb.11 - norman and sunset spins
+
+![norman]({{ '/assets/img/bbd/4-1.jpg' | relative_url }})
+*Breaking news: Norman napped next to me today*
+
+At the [machine creativity workshop](https://neurips2019creativity.github.io/) at NeurIPS 2019, the band YACHT recited some lyrics from their new album, [Chain Tripping](https://yacht.bandcamp.com/album/chain-tripping). They worked with [Ross Goodwin](https://rossgoodwin.com) and used (my guess is) an recurrent neural net to generate the melodies and lyrics, picked and stitched from these materials, and created a production that (well deservedly) received a Grammy nomination. Anyway, these few lines were stuck in my head for the months that followed, and I want to share them with you. 
+
+> I’m so in love I can feel it in my car  
+> I  can feel it in my heart  
+> I  can feel it so hard  
+> (...)  
+> 
+> Oh,  won't you come, won't you come  
+> Won’t you work on my head  
+> Be  my number nine 
+>  
+> To be alive, to be with you, like a weed  
+> 
+> I can feel it in my head  
+> Like a dog in bed
+{: class="smaller"}
+
+The last two lines is striking - it rolls right off the tongue yet the imagery, warm and complex, lingers on. It is so strange yet so familiar that I just cannot turn my thoughts away; this might be my favorite piece of (unironic) neural network literary work to date. Norman reminded me of them again as he peacefully napped, leaning gently on me.
+
+![fire spinning]({{ '/assets/img/bbd/4-2.JPG' | relative_url }})
+*Ben and [Sofy](https://soniayuditskaya.tumblr.com/) practicing fire spinning under sunset*
+
+### Feb. 12 - the portal
+
+![solder]({{ '/assets/img/bbd/5-6.jpg' | relative_url }})
+*fixed some broken LEDs for mars. Thanks [Dan](https://www.danioved.com/) and [Sofy](https://soniayuditskaya.tumblr.com/) for teaching me how to solder!*
+
+At mars: the ITP crew turned on all the TVs at the portal! The installation, calibration, and power supply all took a lot of effort to be figured out, so it was a triumphant moment for the people who has been working so hard on this project.
+
+![tuning]({{ '/assets/img/bbd/5-3.jpg' | relative_url }})
+*[Brandon](http://physical-digital.com/), [Roland](https://www.rolandarnoldt.com/), and [Mai](https://www.maispace.space/) (out of frame) doing some final configurations*
+
+
+![pointing]({{ '/assets/img/bbd/5-4.jpg' | relative_url }})
+*[Roland](https://www.rolandarnoldt.com/) and [Gene](https://genekogan.com)*
+
+<video src="./assets/img/bbd/5-1.mp4" width="500"  class='center' controls preload></video>
+*~ Celebration ~*
+{: class="smaller-center"}
+
+![bouldering wall]({{ '/assets/img/bbd/5-5.jpg' | relative_url }})
+*Meanwhile on another side of the portal, [Alsino](https://alsino.io/) and Espen are building a bouldering wall.*
+
+<video src="./assets/img/bbd/5-2.mp4" width="500"  class='center' controls preload></video>
+*[Gene](https://genekogan.com)'s drone flying through the portal*
+{: class="smaller-center"}
+
+![portal]({{ '/assets/img/bbd/5-7.JPG' | relative_url }})
+*by [Alsino](https://alsino.io/)*
+{: style="width: 80%;" class="center"}
+
+### Feb. 15-19 - parties and nature
+
+This week went by in a wirlwind of endless celebration & travels. 
+
+![disco ball]({{ '/assets/img/bbd/6-2.jpg' | relative_url }})
+*[Alice](http://alicestewwwart.com/) hangs a disco ball at mars.*
+![bread]({{ '/assets/img/bbd/6-3.jpg' | relative_url }})
+*a lady named catherine makes rosemary flat bread live in darkness.*
+![fireplace]({{ '/assets/img/bbd/6-1.jpg' | relative_url }})
+*Bonfire!*
+![jam]({{ '/assets/img/bbd/6-7.JPG' | relative_url }})
+*slab city jams. photo by dan.*
+![salvation mountain]({{ '/assets/img/bbd/6-4.JPG' | relative_url }})
+*nerds vs. hippie powers. photo by dan.*
+![plant]({{ '/assets/img/bbd/6-6.jpg' | relative_url }})
+*We found a plant that looks like neurons!*
+
+![sunrise]({{ '/assets/img/bbd/6-5.JPG' | relative_url }})
+*Sofy and I watch sunrise on rock @ Joshua Tree. photo by phil.*
+
+
+### Feb. 22 - neon colors
+Today I took a lot of photos with neon colors.
+
+![sheverb]({{ '/assets/img/bbd/7-1.jpg' | relative_url }})
+*[Sheverb](https://sheverb.bandcamp.com/), the residence band at [BBAC](http://www.growersfirst.org/bbaccenter.html) this month, plays their new album at ski inn.*
+
+Fantastic femme-led instrumental surf rock; I recommend you to check them out. 
+
+After the show, We roamed around the town.
+
+![paul]({{ '/assets/img/bbd/7-2.jpg' | relative_url }})
+*[paul](https://www.instagram.com/paul_tootoot_/) at bombay beach estates, waiting to appear in Sheverb's mv shooting.*
+{: style="width: 80%;" class="center"}
+
+
+![randy polumbo]({{ '/assets/img/bbd/7-3.jpg' | relative_url }})
+*ben \(fabulous\), inside [Randy Polumbo](https://www.polumbo.com/)'s angler grove \(also fabulous\)*
+
+
+### Feb. 23 - double feature
+mars double feature night strikes again.
+
+![akira]({{ '/assets/img/bbd/8-1.jpg' | relative_url }})
+*thank you unicyle for being a loyal friend and an great speaker*
+
+
+### Feb. 24-25 - mars work station & karaoke of dreams
+
+One day over dinner, [Derek](https://www.instagram.com/dxkzh/), [Sofy](https://www.instagram.com/_the_s0urce_/), and I have came together to decide that we would like to build an AI-generated karaoke booth in the middle of the desert. I will be working on its software for the next couple of days, and you can find the code [here](https://github.com/guiguiguiguigui/karaoke).
+
+At sunset I went to mars. As I got to mars I found out that a brand new workspace was built on the side of Pegasus, our shipping container.
+
+![outside]({{ '/assets/img/bbd/9-3.jpg' | relative_url }})
+*allunimum sheets FTW*
+
+![inside]({{ '/assets/img/bbd/9-1.jpg' | relative_url }})
+*Beutiful, shiny, and just the right amount of shade.*
+
+![inside]({{ '/assets/img/bbd/9-2.jpg' | relative_url }})
+*We even have a kitchen space! Alsino cooking.*
+
+Mars is starting to feel like a real hub now, a place we can live and work in.
+
+Maybe even more notable is that Sofy built this majestic tesseract in one day. Is she real?
+
+![sofy and the tesseract]({{ '/assets/img/bbd/9-4.jpg' | relative_url }})
+*This tesseract will be housing our desert dream karaoke.*
+
+![fire spinning]({{ '/assets/img/bbd/9-5.jpeg' | relative_url }})
+*The mighty builder also spins fire.*
+
+![Lode Star]({{ '/assets/img/bbd/9-6.jpeg' | relative_url }})
+*Bombay Beach's skyline.*
+
+### Feb. 26 - Espen
+
+[Espen](https://www.instagram.com/eppiepeppie/) is leaving us soon. Durring his time here, in addition to being a remarkable human, he trained a VAE on faces and built this lovely installation. 
+
+![espen]({{ '/assets/img/bbd/10-1.jpeg' | relative_url }})
+*The artist examining his creation*
+
+![bombaydreams]({{ '/assets/img/bbd/10-2.jpg' | relative_url }})
+*morphed faces. picture by espen.*
+
+The TVs show Brahmannauts' portraits being interpreted by a neural network, which applies style transfer to morph the faces into artwokes at Bombay Beach. You can read more about _Bombay Dreaming_ [here](https://www.instagram.com/p/B9UkuAqF_8v/) and [here](https://app.gitbook.com/@brahman/s/brahman/projects/bombay-dreaming).
+
+It was an honor to be there to celebrate the finish of this piece. I'm familiar with images generated by GANs (and my opinion is that artworks created by them are often unintersting), but it's cool to see them being given physicality. The fact that they are played on hotel-renovation TVs, lying in hand-crafted frames carved into the middle of a desert is in itself provocative about people's relationship with technology and the enviornment. (and also, the piece is about people I like and care about...) I think it's quite clever and lovely. 
+
+![Espen]({{ '/assets/img/bbd/10-3.jpeg' | relative_url }})
+*Thank you espen!*
+
+### Feb. 29 - collective intellegence lab
+
+I arrived just in time from san diego to be at gene's collective intellegence lab. High winds on mars cuased a night sandstorm, but in some sense it was the perfect backdrop to learn / hear a pitch about an autonomous AI artist.
+
+![martians]({{ '/assets/img/bbd/11-2.jpg' | relative_url }})
+*martians. picture credit [alice](http://alicestewwwart.com/)*
+{: style="width: 80%;" class="center"}
+![gene]({{ '/assets/img/bbd/11-3.jpg' | relative_url }})
+*gene multiplies.*
+{: style="width: 80%;" class="center"}
+![party]({{ '/assets/img/bbd/11-4.jpg' | relative_url }})
+*I wasn't at the after party, but this picture is too iconic to be omitted. cr: alsino.*
+{: style="width: 80%;" class="center"}
+
+
+### Mar. 1 - unicycle repair
+
+![unicycle]({{ '/assets/img/bbd/11-1.jpeg' | relative_url }})
+*cracked open a good boy to replace the batteries*
+
+In other news, Sofy's tesseract now has a inner chamber! The smaller one will house the electronics of our AI karaoke machine. 
+
+![tess]({{ '/assets/img/bbd/11-2.GIF' | relative_url }})
+*sofy is a genius and her creations are majestic*
+
+### Mar. 2 - windstorm
+
+![wind]({{ '/assets/img/bbd/12-1.gif' | relative_url }})
+*high winds on mars & flying parts*
+{: style="width: 60%;" class="center"}
+
+The wind disrupted our plan to work on our computers on mars. Instead, we went into Gene's RV and he supplied us with delicious omlets and good conversations.
+
+![puma]({{ '/assets/img/bbd/12-2.jpeg' | relative_url }})
+*Lovely humans: [TJ](https://www.instagram.com/teejsees/), [Cai](shashrvacai.com), and [Rachel](https://rachelbinx.com/)*
+
+
+### Mar. 4 - pallet racks, building the forest, and alice's soldering workshop
+
+Today marks my favourite day at Brahman so far. 
+
+![racks]({{ '/assets/img/bbd/13-1.jpeg' | relative_url }})
+*choosing a site for the forest*
+![racks]({{ '/assets/img/bbd/13-2.jpeg' | relative_url }})
+![racks]({{ '/assets/img/bbd/13-3.jpeg' | relative_url }})
+*building the forest*
+![racks]({{ '/assets/img/bbd/13-7.jpeg' | relative_url }})
+*Putting up fastenings*
+![solar]({{ '/assets/img/bbd/13-4.jpeg' | relative_url }})
+*cleaning and tying down solar panels on top of pegasus*
+![puma]({{ '/assets/img/bbd/13-5.jpeg' | relative_url }})
+*taking a brake in the shade <3*
+![jonas]({{ '/assets/img/bbd/13-6.jpeg' | relative_url }})
+*[Jonas](https://jonasjohansson.se/)*
+
+At sunset [alice](http://alicestewwwart.com/) offered her soldering workshop. 
+
+![solder]({{ '/assets/img/bbd/13-8.jpeg' | relative_url }})
+*The opening slide features a stock photo of a lady holding the soldering iron wrong*
+![solder]({{ '/assets/img/bbd/13-9.jpeg' | relative_url }})
+*~liquid analogy~ extremely cute illustrations by (TODO)*
+![solder]({{ '/assets/img/bbd/13-10.jpeg' | relative_url }})
+*soldering over pink LEDs*
+
+### Mar. 5 - bouldering workshop
+
+![alsino]({{ '/assets/img/bbd/14-2.jpeg' | relative_url }})
+*Alsino marking routes on the wall prior to the workshop*
+
+[Alsino](https://alsino.io/) and [Paul](https://www.instagram.com/paul_tootoot_/) updated the climbing wall and gave a bouldering workshop. The only record I have of it was during warmup:
+
+![warmup]({{ '/assets/img/bbd/14-1.gif' | relative_url }})
+*servers in a crowded restaurant.*
+{: style="width: 60%;" class="center"}
+
+### Mar. 6-8 - found object drawing robot
+
+![robot]({{ '/assets/img/bbd/15-0.gif' | relative_url }})
+*my little baby in action 💗*
+{: style="width: 60%;" class="center"}
+
+I built a drawing robot with desert wood! The machanism and software is heavily based on [BranchioGraph](https://brachiograph.readthedocs.io/en/latest/index.html), with a different orientation that required some trignometry to figure out.
+
+![robot1]({{ '/assets/img/bbd/15-1.jpeg' | relative_url }})
+*wholesome nighttime activity: super-glueing servos onto sticks*
+
+![robot3]({{ '/assets/img/bbd/15-3.jpeg' | relative_url }})
+*first run! it was told to draw rectangles; decided to scribble some kindered landscape instead.*
+{: style="width: 60%;" class="center"}
+
+![robot2]({{ '/assets/img/bbd/15-2.jpeg' | relative_url }})
+*very ad-hoc calibration setup ft. printed protractor and earing*
+
+Even after calibration the drawing is still a little... drunk looking, because of the elasticity in the sticks, the looseness of the joints, and inacuracies of servo controls. In some ways, though, these faults add a layer of intermediacy to the drawing (or the act of drawing), which one may see as part of the machine's _touch_. Maybe the physicality of the robot is where originality emerges. 
+
+![pallet racks]({{ '/assets/img/bbd/13-7.jpeg' | relative_url }})
+![vectors]({{ '/assets/img/bbd/15-4.jpeg' | relative_url }})
+![drawing]({{ '/assets/img/bbd/15-5.jpeg' | relative_url }})
+*A drawing of a vectorized picture of us building pallet racks.*
+{: style="width: 60%;" class="center"}
+
+This being said, I will still try to find ways to improve calibration and the control software to make the drawings at least legible. You can find my code for it [here](https://github.com/guiguiguiguigui/chatsubo-e).
+
+Some of this work happened at the mars stupid hackathon (held concurrently with [stupid hackathon sweden](https://bit.ly/3cHaZJ4)), proposed by [jonas]((https://jonasjohansson.se/)) and [christian](https://www.instagram.com/dotkokott/). here are some snippits of it.
+
+![sh-1]({{ '/assets/img/bbd/15-6.jpg' | relative_url }})
+*Seva, TJ, and Gene working on networking for the portal*
+
+![sh-2]({{ '/assets/img/bbd/15-7.jpg' | relative_url }})
+*Sofy soldering!*
+
+![sh-3]({{ '/assets/img/bbd/15-8.jpg' | relative_url }})
+*Christian testing out his arduino alcohol sensor; paul and xander are entertained.*
+
+### Mar. 9 - 赤壁赋
+
+![drawing]({{ '/assets/img/bbd/16-1.jpeg' | relative_url }})
+*[Vanessa](https://va2rosa.com/) drawing on Pegasus with charcoals found in bonfire*
+
+![chibifu]({{ '/assets/img/bbd/16-2.jpeg' | relative_url }})
+*my humble attempt at mural-ing, ft. [Kirby](https://www.instagram.com/kirbucious/) painting an actual mural*
+
+Scribed on Pegasus is the Ode on the Red Cliffs by Su Shi (《前赤壁赋》), written in 1082 AD. It's one of my favourite texts in Chinese, and I think about it often since I've been here. 
+
+>蘇子曰：「客亦知夫水與月乎？逝者如斯，而未嘗往也；盈虛者如彼，而卒莫消長也，蓋將自其變者而觀之，則天地曾不能以一瞬；自其不變者而觀之，則物與我皆無盡也，而又何羨乎？且夫天地之間，物各有主，苟非吾之所有，雖一毫而莫取。惟江上之清風，與山間之明月，耳得之而為聲，目遇之而成色，取之無禁，用之不竭，是造物者之無盡藏也，而吾與子之所共適。」
+
+[//](I can't explain it well. It is a meditation  on nature's rhythm of change and loss, that it is sublime and infinte and beyond the claim of individuals. The last sentence roughly translates to: As the ears meet them, they become sounds; and the eyes meet them, they become colours.)
+
+![sunset]({{ '/assets/img/bbd/16-4.jpg' | relative_url }})
+&nbsp;
+![sunset]({{ '/assets/img/bbd/16-5.jpg' | relative_url }})
+*是造物者之無盡藏也，而吾與子之所共適。*
+
+
+### Mar. 5-10, 20 - Desert Fever Dream Karaoke
+
+For consistency, I am abusing the power of non-linear narratives and am consolidating a few checkpoints from the future into this entry. It's a very crude + sophia-oriented documentation of the project that (hopefully) will be polished in near future.
+
+With the amount of time and computation/finatial resources we have, the realistic solution is to use of-the-shelf models and pre-generate the content. You can find most of the code [here](https://github.com/guiguiguiguigui/karaoke), although they are written for a very specific usecase / machine setup.
+
+The first step is lyrics generated by a GPT-2 finetuned on popular song lyrics. [GPT-2](https://openai.com/blog/better-language-models/) (general purposed transformer) is a gargantuan language model trained on 8 million web pages (you can try talking to it [here](https://talktotransformer.com/)) released by openAI. I fine-tuned it using [this](https://www.kaggle.com/mousehead/songlyrics) dataset of 57,650 song lyrics.   
+
+(WORK IN PROGRESS)
+
+bonus content: me carrying the small tesseract back to town so we can test electronics.
+
+![unicycle]({{ '/assets/img/bbd/16-3.gif' | relative_url }})
+{: style="width: 60%;" class="center"}
+
+
+### Mar. 11 - i gave a talk
+
+![talk]({{ '/assets/img/bbd/18-1.png' | relative_url }})
+*I talked a bit about natural language processing.*
+
+![karaoke]({{ '/assets/img/bbd/18-2.jpeg' | relative_url }})
+*which evolved into a hilarious little karaoke session.*
+
+
+### Mar. 13 - wood saw
+
+![chop]({{ '/assets/img/bbd/19.jpeg' | relative_url }})
+*Sofy taught me how to chop wood. thank you sensei!!!*
+{: style="width: 80%;" class="center"}
+
+In other news, the desert is moist and green after the rain.
+
+![desert]({{ '/assets/img/bbd/21-2.jpeg' | relative_url }})
+{: style="width: 80%;" class="center"}
+&nbsp;
+
+![ship]({{ '/assets/img/bbd/21-1.jpeg' | relative_url }})
+*a wrecked ship*
+
+
+### Mar. 14 - noise and randomness; derek livecoding
+
+![sofy]({{ '/assets/img/bbd/20-1.gif' | relative_url }})
+*Sofy's randomness and noise talk.*
+
+![derek]({{ '/assets/img/bbd/20-2.gif' | relative_url }})
+*[Derek](https://www.instagram.com/dxkzh/) Livecoding at the forest. Visuals by [Cai](shashrvacai.com)*
+
+![sofy]({{ '/assets/img/bbd/20-3.jpeg' | relative_url }})
+*A gorgeous bonfire follows.*
+
+
+### Mar. 16 - Quarantine starts.
+
+On the 15th me and a few friend took a break and went to the spa, and had dinner at the local bar after we came back. 
+
+![spa]({{ '/assets/img/bbd/q-0.jpg' | relative_url }})
+*Everyone looking dreamy*
+
+In hindsight, this was an irresponsible move as we might become a vector of risk to our community. California has anounced state emergency and our European friends are facing canceled flights and closing borders. In response, an all-hands meeting was called and we discussed where to go from here. Brahman goes into a collective quarantine.
+
+![meeting]({{ '/assets/img/bbd/q-1.jpeg' | relative_url }})
+*We were told to project as much happiness as possible in this photo*
+
+
+![town]({{ '/assets/img/bbd/q-2.jpg' | relative_url }})
+*An empty town in sunset.*
+
+### Mar. 17 - Mars Center of Delinquent Activities
+
+Mars, the land of outlaws. Masterpiece by [Alice](http://alicestewwwart.com/) and [Alsino](https://alsino.io/).
+
+![]({{ '/assets/img/bbd/mcda/0.jpg' | relative_url }})
+*a bar serving customers*
+
+![]({{ '/assets/img/bbd/mcda/1.jpg' | relative_url }})
+*Alice, and her GPT-2-generated cocktail recipe*
+
+![]({{ '/assets/img/bbd/mcda/2.jpg' | relative_url }})
+*Paul and Freyja tattooing*
+
+![]({{ '/assets/img/bbd/mcda/3.jpg' | relative_url }})
+*Musicians*
+
+![]({{ '/assets/img/bbd/mcda/4.jpeg' | relative_url }})
+*Unicyclers, picuture by Xander*
+
+![]({{ '/assets/img/bbd/mcda/5.jpeg' | relative_url }})
+*the notorious Alice and Alsino, makers of space, masterminds of the MCDA*
+
+### Mar. 19 - Trees
+![]({{ '/assets/img/bbd/sing/t.jpg' | relative_url }})
+&nbsp;
+![]({{ '/assets/img/bbd/sing/3.jpg' | relative_url }})
+
+### Mar. 21 - who's afraid of the singularity?
+
+The final event. 
+
+![]({{ '/assets/img/bbd/sing/0.jpg' | relative_url }})
+*Yin dances in sunset*
+
+![]({{ '/assets/img/bbd/sing/1.jpg' | relative_url }})
+*Kirby's cocoa circle*
+
+![]({{ '/assets/img/bbd/sing/2.jpg' | relative_url }})
+*our karaoke in its full glory*
+
+![]({{ '/assets/img/bbd/sing/4.jpg' | relative_url }})
+*Painted & projected portal by Kirby*
+
+![]({{ '/assets/img/bbd/sing/9.jpg' | relative_url }})
+*Gene's BBGAN*
+
+![]({{ '/assets/img/bbd/sing/10.jpg' | relative_url }})
+*the inverted disco ball*
+
+![]({{ '/assets/img/bbd/sing/11.jpg' | relative_url }})
+*Yin performs. visuals by Cai*
+
+![]({{ '/assets/img/bbd/sing/6.jpg' | relative_url }})
+*Ark playing a sound art piece at the forest. Visuals by Vaporstack*
+
+![]({{ '/assets/img/bbd/sing/p-0.jpg' | relative_url }})
+![]({{ '/assets/img/bbd/sing/p-1.jpg' | relative_url }})
+*Phil's audio-visual synthesizer*
+
+![]({{ '/assets/img/bbd/sing/7.jpg' | relative_url }})
+*Jonas DJs. Art by Kirby, tech by Seva.*
+
+![]({{ '/assets/img/bbd/sing/5.jpg' | relative_url }})
+*people enjoying space.*
+
+![]({{ '/assets/img/bbd/sing/12.jpg' | relative_url }})
+*me and sofy, inside the disco ball.*
+
+![]({{ '/assets/img/bbd/sing/8.jpg' | relative_url }})
+*A group portrait.*
+
+
+
+
+
+
+## Links to documentation and projects
+- [Brahman.ai](https://brahman.ai)
+- [Brahman Wiki](https://app.gitbook.com/@brahman/s/brahman/) (in construction)
+- [Github organization](https://github.com/brahman-ai)
+- [mars.radio](http://mars.radio/)
