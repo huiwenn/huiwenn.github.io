@@ -17,7 +17,7 @@ tags: machine-learning
 
 This implementation was a homework for a class called _Geometry of Data_ (very cool) taught by [Gal Mishne](http://mishne.ucsd.edu) (also very cool). 
 
-One thing about CS grad school is that I started encountering problems whose solutions can't be easily found online or in books (how inconvenient!). Sometimes, though, the process becomes very fulfilling, and this is one of them.
+One thing about CS grad school is that I started encountering problems whose solutions can't be easily found online or in books (how inconvenient!). Sometimes, though, it makes the process very fulfilling, and this is one of those times.
 
 
 ## Spectral Clustering
@@ -242,10 +242,10 @@ Zelnik-Manor and Perona (2014)'s algorithm proposes to use non-maximal suppressi
 
 ## Image Segmentation
 
-One use case of clustering is on image segmentation. One of the reasons of me writing this post is to show off my cat picture, so here we go.
+One use case of clustering is on image segmentation. I happen to be cat-sitting for my friend as I'm writing this assignment, so here we go.
 
 ![cat]({{ '/assets/img/clustering/cat.png' | relative_url }})
-*my friend's cat chilling in my room 🐈*
+*🎸🛋️🐈*
 
 The way I approached it is to cut the image into smaller patches and cluster them. The code below resizes the image matrix into non-overlapping patches of size $$2×2$$, essentially down-sampling the image. `open-cv`'s python package is used for this processing.
 
