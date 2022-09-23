@@ -1,5 +1,17 @@
 <head>
 
+    <!-- Google tag (gtag.js) -->
+    <!-- Please remove this tag if you are building yoru own website! -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-EYCVB1QMRM"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-EYCVB1QMRM');
+    </script>
+
+
     {% if site.tags != "" %}
       {% include tags.html %}
     {% endif %}
