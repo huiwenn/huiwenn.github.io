@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "On Evaluating Probablistic Predictions"
-date: 2024-1-1
+date: 2023-1-1
 tags: machine-learning
 ---
 
