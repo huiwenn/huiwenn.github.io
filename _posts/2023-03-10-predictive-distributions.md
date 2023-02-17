@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "On Evaluating Probablistic Predictions"
-date: 2023-1-1
+date: 2023-4-1
 tags: machine-learning
 ---
 
@@ -23,17 +23,26 @@ Scoring rules assess the quality of probabilistic forecasts, by assigning a nume
 
 ### Some Examples
 
-#### Brier/Quadratic Score
+- Brier/Quadratic Score
 
-#### Mean Interval Score
+- Mean Interval Score
 
-#### KL divergence is not a proper scoring rule
+- Energy score 
+Energy Score (ES) is a proper scoring rule to measure calibration and sharpness of the predicted distributions. Defined as $$\text{ES}(P, \textbf{x}) = E_{ \textbf{X} \sim P} \| \textbf{X} - \textbf{x} \| - \frac{1}{2} E_{ \textbf{X, X'} \sim P} \| \textbf{X} - \textbf{X'} \| $$
+
+- KL divergence is not a proper scoring rule
+
 
 
 ## For multi-dimensional distributions, Proper Scoring Rules
 
+### Energy Score
 
-## Distribution-free methods 
+
+### mCRPS
+
+
+## Distribution-free methods
 
 Conformal predictive distributions 
 
