@@ -30,6 +30,8 @@ Scoring rules assess the quality of probabilistic forecasts, by assigning a nume
 - Energy score 
 Energy Score (ES) is a proper scoring rule to measure calibration and sharpness of the predicted distributions. Defined as $$\text{ES}(P, \textbf{x}) = E_{ \textbf{X} \sim P} \| \textbf{X} - \textbf{x} \| - \frac{1}{2} E_{ \textbf{X, X'} \sim P} \| \textbf{X} - \textbf{X'} \| $$
 
+The energy score parameter-free measure, which is easy to use and implement. Recent [research](https://arxiv.org/pdf/2010.03759.pdf) shows that the energy score outperforms the softmax confidence score on common OOD evaluation benchmarks. (this is based on energy models not the same? check)
+
 - KL divergence is not a proper scoring rule
 
 
@@ -39,12 +41,19 @@ Energy Score (ES) is a proper scoring rule to measure calibration and sharpness 
 ### Energy Score
 
 
+
 ### mCRPS
 
 
 ## Distribution-free methods
 
 Conformal predictive distributions 
+
+_Extended Readings_
+
+ - Valid prediction intervals for regression problems [pdf](https://arxiv.org/pdf/2107.00363.pdf)
+  A survey of probablistic forecasting models including Bayesian methods (GP, BNN), ensemble methods, direct estimation methods (quantile regression), and conformal prediction methods. They introduce the methods clearly and compare the advantages and disandvantages of each. 
+
 
 _References_
 
