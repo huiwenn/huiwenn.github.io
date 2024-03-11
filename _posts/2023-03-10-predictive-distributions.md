@@ -5,7 +5,7 @@ date: 2023-10-22
 tags: machine-learning
 ---
 
-> Point predictions are often insufficient and for machine learning tasks that have to deal with uncertainty. Instead, probabilistic models are becoming more widely used. This post talks about proper scoring rules, a framework to think about and evaluate probabilistic predictions.
+> Point predictions are often insufficient for machine learning tasks that involves uncertainty. As a solution, probabilistic models are becoming more widely used. This post talks about proper scoring rules, a framework to think about and evaluate probabilistic predictions.
 
 <!--more-->
 
@@ -97,7 +97,7 @@ $$ CRPS(F, y) = \int_{-\infty}^{\infty} [F(x) - \mathbb{1}(x \geq y)]^2 \, dx $$
 - $$ dx $$: Infinitesimal change in $$ x $$, indicating integration over the entire real number line.
 
 
-#### Energy Score 
+#### Energy Score
 Energy Score (ES) is a proper scoring rule to measure calibration and sharpness of the predicted distributions. Defined as 
 
 $$\text{ES}(P, \textbf{x}) = E_{ \textbf{X} \sim P} \| \textbf{X} - \textbf{x} \| - \frac{1}{2} E_{ \textbf{X, X'} \sim P} \| \textbf{X} - \textbf{X'} \| $$
@@ -106,7 +106,7 @@ $$\text{ES}(P, \textbf{x}) = E_{ \textbf{X} \sim P} \| \textbf{X} - \textbf{x} \
 
 The energy score is parameter-free measure, which makes it easy to implement, especially for distributions whose analytic expressions are unavailable or difficult. Another result of this property is that it is not directly differentiable w.r.t. parameters. 
 
-####  Interval specific: Mean Interval Score
+#### Interval specific: Mean Interval Score
 
 A common way of using probability forecasts for decision making is translating it to confidence intervals. We will go through two of the 
 
