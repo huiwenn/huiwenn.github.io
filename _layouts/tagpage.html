@@ -3,16 +3,38 @@ layout: default
 ---
 <div class="post other-pages">
 	<h1>Tag: {{ page.tag }}</h1>
+	  <h1 class="page-heading">Posts</h1>
+
 	<ul>
 	{% for post in site.tags[page.tag] %}
-	    {% if post.hide== false  %}
-	  <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a> ({{ post.date | date_to_string }})<br>
-	    {{ post.description }}
-	  </li>
-	   {% endif %}
+
+	{% unless post.categories contains "objects" %}
+      <li>
+        <h2>
+          <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+            {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+          <span class="post-meta">
+            {{ post.date | date: date_format }}
+            <span>
+              {% for tag in post.tags %}
+                {% capture tag_name %}{{ tag }}{% endcapture %}
+                <a class="post-tag" href="/tag/{{ tag_name }}"><nobr>{{ tag_name }}</nobr>&nbsp;</a>
+              {% endfor %}
+            </span>
+          </span>
+
+          {% if post.excerpt %}
+          <span class="post-excerpt">
+            {{ post.excerpt }}
+          </span>
+          {% endif %}
+        </h2>
+      </li>
+    {% endunless %}    
 
 	{% endfor %}
 	</ul>
 </div>
 
 <hr>
+
