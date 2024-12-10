@@ -3,7 +3,7 @@ layout: post
 title: "Learning to Move, Learning to Play, Learning to Animate"
 date: 2024-12-03
 categories: objects
-img: "/assets/img/l2m/title.jpg"
+img: "/assets/img/l2m/7.jpg"
 ---
 <!--more-->
 
@@ -70,10 +70,12 @@ Technical & Installation Support: Yifan Guo, Ke Li, Zehao Wang, Zetao Yu
 
 Special thanks to Palka Puri for plant support, the Initiative for Digital Exploration of Arts and Sciences (IDEAS) program at the University of California San Diego and Qualcomm Institute for sponsoring this project, and the AV team from the California Institute for Telecommunications and Information Technology (Calit2) for installation and media support.
 
+![Poster]({{ '/assets/img/l2m/learning_to_move_poster.png' | relative_url }})
+*Poster at Neurips 2024.*
 
 
 ![stills]({{ '/assets/img/l2m/1.jpg' | relative_url }})
-![stills]({{ '/assets/img/l2m/2.jpg' | relative_url }}) ![stills]({{ '/assets/img/l2m/3.jpg' | relative_url }})
+![stills]({{ '/assets/img/l2m/2.jpg' | relative_url }}) 
 ![stills]({{ '/assets/img/l2m/4.jpg' | relative_url }})
 ![stills]({{ '/assets/img/l2m/5.jpg' | relative_url }})
 ![stills]({{ '/assets/img/l2m/6.jpg' | relative_url }})
