@@ -2,7 +2,7 @@
 layout: post
 title: "Learning to Move, Learning to Play, Learning to Animate"
 date: 2024-12-03
-img: "/assets/img/l2m/7.jpg"
+tags: machine-learning
 ---
 <!--more-->
 
