@@ -4,6 +4,10 @@ title: "Learning to Move, Learning to Play, Learning to Animate"
 date: 2024-12-03
 tags: machine-learning
 ---
+
+> An immersive performance featureing multi-modal generative machine learning model @ UCSD's Qualcomm institude.
+
+
 <!--more-->
 
 ![]({{ '/assets/img/yuanque/title.jpg' | relative_url }})
