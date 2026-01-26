@@ -183,6 +183,17 @@
       font-weight: bold;
   }
 
+  ul {
+      margin-bottom: $spacing-unit * 0.8;
+  }
+
+  img {
+      @include media-query($on-palm) {
+          max-width: 60%;
+          margin: 0 auto;
+      }
+  }
+
 }
 .page-content {
   padding: $spacing-unit 0;
