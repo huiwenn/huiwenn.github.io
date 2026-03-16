@@ -8,14 +8,13 @@ ul, figure {
   padding: 0;
 }
 
-
 hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid $grey-color-vlight;
-    margin: 2em 0;
-    padding: 0; 
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid $grey-color-vlight;
+  margin: 2em 0;
+  padding: 0;
 }
 
 /**
@@ -31,24 +30,6 @@ body {
        -o-font-feature-settings: "kern" 1;
           font-feature-settings: "kern" 1;
   font-kerning: normal;
-
-}
-
-.share-buttons {
-  display: inline;
-  float: right;
-}
-
-.share-button .fb-like{
-  display: block;
-  float: left;
-  padding: 0 5px;
-  height: 30px;
-  vertical-align: text-bottom !important;
-}
-
-.twitter-share-button {
-  padding-top: 1px;
 }
 
 .table-of-content {
@@ -79,7 +60,7 @@ body {
 }
 
 /**
- * Set `margin-bottom` to maintain vertical rhythm
+ * Vertical rhythm
  */
 h1, h2, h3, h4, h5, h6,
 p, blockquote, pre,
@@ -88,15 +69,12 @@ ul, ol, dl, figure,
   margin-bottom: $spacing-unit / 2;
 }
 
-
-
 /**
  * Images
  */
 img {
   max-width: 100%;
   vertical-align: middle;
-  margin: 10px auto;
   text-align: center;
   display: block;
   margin: 0 auto;
@@ -113,21 +91,21 @@ img + em {
 }
 
 .center {
-    max-width: 100%;
-    display: block;
-    margin: 0 auto;
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
 }
 
 .gallery {
   padding-bottom: 30px;
 }
+
 /**
- * video
+ * Video
  */
 video {
   max-width: 100%;
   vertical-align: middle;
-  margin: 10px auto;
   text-align: center;
   display: block;
   margin: 0 auto;
@@ -143,13 +121,6 @@ video + em {
   padding-bottom: 8px;
 }
 
-.center {
-    max-width: 100%;
-    display: block;
-    margin: 0 auto;
-}
-
-
 /**
  * Figures
  */
@@ -164,8 +135,6 @@ figcaption {
   text-align: center;
 }
 
-
-
 /**
  * Lists
  */
@@ -179,7 +148,6 @@ li {
     margin-bottom: 0;
   }
 }
-
 
 /**
  * Table
@@ -203,15 +171,12 @@ table.info {
   }
 }
 
-
 /**
  * Headings
  */
 h1, h2, h3, h4, h5, h6 {
   font-weight: $base-font-weight;
 }
-
-
 
 /**
  * Links
@@ -220,25 +185,10 @@ a {
   color: $brand-color;
   text-decoration: underline;
 
-  /*&:visited {
-    color: $grey-color;
-  }
-  */
-
   &:hover {
-    color: $grey-color-vlight;
     text-decoration: underline;
   }
-
-  .social-media-list &:hover {
-    text-decoration: none;
-
-    .username {
-      text-decoration: underline;
-    }
-  }
 }
-
 
 /**
  * Blockquotes
@@ -257,19 +207,18 @@ blockquote {
   }
 }
 
-.smaller{
-   font-size: smaller;
-   font-style: italic;
+.smaller {
+  font-size: smaller;
+  font-style: italic;
 }
 
-.smaller-center{
-   font-size: smaller;
-   font-style: italic;
-   text-align: center;
-   padding-top: 8px;
-   padding-bottom: 8px;
+.smaller-center {
+  font-size: smaller;
+  font-style: italic;
+  text-align: center;
+  padding-top: 8px;
+  padding-bottom: 8px;
 }
-
 
 /**
  * Code formatting
@@ -301,14 +250,11 @@ pre {
   }
 }
 
-
-
 /**
  * Wrapper
  */
 .wrapper {
-  max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
-  max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
+  max-width: calc(#{$content-width} - (#{$spacing-unit} * 2));
   margin-right: auto;
   margin-left: auto;
   padding-right: $spacing-unit;
@@ -316,14 +262,11 @@ pre {
   @extend %clearfix;
 
   @include media-query($on-laptop) {
-    max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
-    max-width:         calc(#{$content-width} - (#{$spacing-unit}));
+    max-width: calc(#{$content-width} - (#{$spacing-unit}));
     padding-right: $spacing-unit / 2;
     padding-left: $spacing-unit / 2;
   }
 }
-
-
 
 /**
  * Clearfix
@@ -333,8 +276,6 @@ pre {
   display: table;
   clear: both;
 }
-
-
 
 /**
  * Icons
@@ -355,5 +296,32 @@ pre {
 
   li + li {
     padding-top: 5px;
+  }
+}
+
+/**
+ * Hover-reveal interaction
+ */
+.reveal-hover {
+  cursor: pointer;
+}
+
+#hover-reveal {
+  position: fixed;
+  pointer-events: none;
+  z-index: 1000;
+  opacity: 0;
+  transition: opacity 0.25s ease;
+  max-width: 300px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+
+  img {
+    width: 100%;
+    display: block;
+    margin: 0;
+  }
+
+  &.visible {
+    opacity: 1;
   }
 }

@@ -3,12 +3,11 @@ layout: default
 ---
 <div class="home other-pages">
 
-    {% for post in site.categories["objects"] %}
-      <div class="col-sm-6 gallery">
-        <a href="{{ post.url | relative_url }}">
-          <img title="{{post.title}}" src="{{ post.img | relative_url }}" >
-        </a>
-      </div>
+    {% for post in site.categories["projects"] %}
+      <a class="project-item" href="{{ post.url | relative_url }}">
+        <span class="project-title">{{ post.title }}</span>
+        <img class="project-img" title="{{ post.title }}" src="{{ post.img | relative_url }}">
+      </a>
     {% endfor %}
 
- </div>
+</div>

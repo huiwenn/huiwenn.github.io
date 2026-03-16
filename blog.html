@@ -17,13 +17,11 @@ layout: default
     </span>
   {% endfor %}
 
-  <h1 class="page-heading"></h1>
-
   <h1 class="page-heading">Posts</h1>
 
   <ul class="post-list">
     {% for post in site.posts %}
-    {% unless post.categories contains "objects" %}
+    {% unless post.categories contains "projects" and post.tags.size == 0 %}
       <li>
         <h2>
           <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>

@@ -2,7 +2,7 @@
 layout: post
 title: "Found Materials Drawing Machine"
 date: 2020-07-01 01:09:00
-categories: objects
+categories: projects
 img: "/assets/img/drawingmachine/vid.gif"
 ---
 

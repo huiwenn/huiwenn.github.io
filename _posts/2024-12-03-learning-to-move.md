@@ -2,9 +2,13 @@
 layout: post
 title: "Learning to Move, Learning to Play, Learning to Animate"
 date: 2024-12-03
-categories: objects
+categories: projects
+tags: machine-learning
 img: "/assets/img/l2m/7.jpg"
 ---
+
+> An immersive performance featuring multi-modal generative machine learning model @ UCSD's Qualcomm Institute.
+
 <!--more-->
 
 ![]({{ '/assets/img/yuanque/title.jpg' | relative_url }})
