@@ -3,7 +3,7 @@ layout: post
 title: "Learning to Move, Learning to Play, Learning to Animate"
 date: 2024-12-03
 categories: projects
-tags: machine-learning
+tags: machine-learning art_making
 img: "/assets/img/l2m/7.jpg"
 ---
 
